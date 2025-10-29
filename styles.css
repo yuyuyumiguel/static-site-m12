@@ -33,6 +33,34 @@ body{
   margin:8px 0 12px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.06);
 }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.grid figure {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.grid figcaption {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 4px;
+}
+
 .critique{background:white;padding:16px;border-radius:8px;border:1px solid #eaeef5;margin-top:18px}
 .site-footer{padding:14px;text-align:center;color:var(--muted);font-size:0.9rem}
 code{background:#eef3ff;padding:2px 6px;border-radius:4px;color:var(--accent)}
