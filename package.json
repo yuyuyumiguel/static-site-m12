@@ -1,0 +1,12 @@
+{
+  "name": "ugly-ui-showcase",
+  "version": "1.0.0",
+  "description": "Static site to demo GitHub Pages + Actions + ESLint pre-deploy check",
+  "scripts": {
+    "lint": "eslint . --ext .js",
+    "build": "echo \"No build step: static files ready\" && exit 0"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0"
+  }
+}
