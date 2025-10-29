@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ugly UI Showcase — Static Site Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Ugly UI Showcase</h1>
+    <p class="subtitle">Screenshot of the site you provided and a short critique + improvements.</p>
+  </header>
+
+  <main class="container">
+    <section class="screenshot">
+      <h2>The screenshot (replace <code>assets/ugliest-ui.png</code> with your capture)</h2>
+      <figure>
+        <img src="assets/ugliest-ui.png" alt="Screenshot of ugliest UI" id="ugly-screenshot" />
+        <figcaption>Screenshot: https://www.lingscars.com/ (user-provided)</figcaption>
+      </figure>
+    </section>
+
+    <section class="critique">
+      <h2>Why this UI is problematic</h2>
+      <ul>
+        <li>Visual clutter: too many competing colors and animated elements — the user's eye has no focus.</li>
+        <li>Poor information hierarchy: important actions are not emphasized; the navigation is confusing.</li>
+        <li>Accessibility issues: low-contrast text, small clickable areas, and no clear semantics for screen readers.</li>
+        <li>Performance: heavy animations and many third-party widgets slow page load and increase cognitive load.</li>
+      </ul>
+
+      <h3>What I'd do to improve it (concrete steps)</h3>
+      <ol>
+        <li>Establish a restrained color palette and consistent typography to reduce visual noise.</li>
+        <li>Design a clear information hierarchy: primary action, secondary actions, then supporting content.</li>
+        <li>Improve accessibility: 4.5:1 contrast for text, larger hit targets, semantic HTML and ARIA where necessary.</li>
+        <li>Remove or defer nonessential animations/widgets; lazy-load heavy assets and optimize images.</li>
+        <li>Create responsive rules that adapt layout progressively instead of cramming everything on small screens.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Generated for your CI/CD exercise. Replace the screenshot file with your own capture of lingscars.com.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
